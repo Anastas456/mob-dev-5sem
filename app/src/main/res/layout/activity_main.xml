@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_height"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/back_icon_margin"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_icon">
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <TextView
+                android:layout_width="216dp"
+                android:layout_height="24dp"
+                android:text="@string/notifications"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/menu_text_font_size"
+                app:layout_constraintStart_toEndOf="@id/icon_back"
+                app:layout_constraintEnd_toStartOf="@id/icon_search"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                >
+            </TextView>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/icon_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/back_icon_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/icon_back"
+                app:srcCompat="@drawable/search_icon">
+            </androidx.appcompat.widget.AppCompatImageView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/menu"
+        android:orientation="vertical"
+        android:padding="@dimen/back_icon_margin">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="178dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="@color/card_color">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/photo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/card_icon"
+                android:src="@drawable/photo_1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="272dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:text="@string/name1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/card_name_font_size"
+                app:layout_constraintStart_toEndOf="@id/photo1"
+                app:layout_constraintTop_toTopOf="@+id/photo1"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="272dp"
+                android:layout_height="24dp"
+                android:text="@string/time1"
+                android:textColor="@color/capacity_black"
+                app:layout_constraintStart_toStartOf="@id/name1"
+                app:layout_constraintTop_toBottomOf="@id/name1"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/main_text1"
+                android:layout_width="312dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="@dimen/main_text_card"
+                android:text="@string/main_text1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/card_name_font_size"
+                app:layout_constraintStart_toStartOf="@id/photo1"
+                app:layout_constraintTop_toBottomOf="@id/photo1"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="@dimen/back_icon_margin"
+                android:text="@string/replays"
+                android:textAllCaps="true"
+                android:textColor="@color/replays_color"
+                android:textSize="@dimen/replays_font_size"
+                app:layout_constraintStart_toStartOf="@id/main_text1"
+                app:layout_constraintTop_toBottomOf="@id/main_text1"
+                >
+            </TextView>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_icon"
+                android:src="@drawable/like_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="@color/card_color">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/photo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/card_icon"
+                android:src="@drawable/photo_2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="272dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:text="@string/name2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/card_name_font_size"
+                app:layout_constraintStart_toEndOf="@id/photo2"
+                app:layout_constraintTop_toTopOf="@+id/photo2"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="272dp"
+                android:layout_height="24dp"
+                android:text="@string/time2"
+                android:textColor="@color/capacity_black"
+                app:layout_constraintStart_toStartOf="@id/name2"
+                app:layout_constraintTop_toBottomOf="@id/name2"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/main_text2"
+                android:layout_width="311dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="@dimen/main_text_card"
+                android:text="@string/main_text2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/card_name_font_size"
+                app:layout_constraintStart_toStartOf="@id/photo2"
+                app:layout_constraintTop_toBottomOf="@id/photo2"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="@dimen/back_icon_margin"
+                android:text="@string/replays"
+                android:textAllCaps="true"
+                android:textColor="@color/replays_color"
+                android:textSize="@dimen/replays_font_size"
+                app:layout_constraintStart_toStartOf="@id/main_text2"
+                app:layout_constraintTop_toBottomOf="@id/main_text2"
+                >
+            </TextView>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_icon"
+                android:src="@drawable/like_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:background="@color/card_color">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/photo3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:layout_marginTop="@dimen/card_icon"
+                android:src="@drawable/photo_3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="272dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:text="@string/name3"
+                android:textColor="@color/black"
+                android:textSize="@dimen/card_name_font_size"
+                app:layout_constraintStart_toEndOf="@id/photo3"
+                app:layout_constraintTop_toTopOf="@+id/photo3"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="272dp"
+                android:layout_height="24dp"
+                android:text="@string/time1"
+                android:textColor="@color/capacity_black"
+                app:layout_constraintStart_toStartOf="@id/name3"
+                app:layout_constraintTop_toBottomOf="@id/name3"
+                >
+            </TextView>
+
+            <TextView
+                android:id="@+id/main_text3"
+                android:layout_width="311dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="@dimen/main_text_card"
+                android:text="@string/main_text2"
+                android:textColor="@color/black"
+                android:textSize="@dimen/card_name_font_size"
+                app:layout_constraintStart_toStartOf="@id/photo3"
+                app:layout_constraintTop_toBottomOf="@id/photo3"
+                >
+            </TextView>
+
+            <TextView
+                android:layout_width="99dp"
+                android:layout_height="16dp"
+                android:layout_marginTop="@dimen/back_icon_margin"
+                android:text="@string/replays"
+                android:textAllCaps="true"
+                android:textColor="@color/replays_color"
+                android:textSize="@dimen/replays_font_size"
+                app:layout_constraintStart_toStartOf="@id/main_text3"
+                app:layout_constraintTop_toBottomOf="@id/main_text3"
+                >
+            </TextView>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/card_icon"
+                android:src="@drawable/like_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/footer_menu"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_height"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/icon1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/footer_menu_margin"
+                android:layout_marginTop="@dimen/footer_menu_top_margin"
+                android:src="@drawable/ic_shopping"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/icon2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_book_open_variant"
+                app:layout_constraintEnd_toStartOf="@id/icon3"
+                app:layout_constraintStart_toEndOf="@id/icon1"
+                app:layout_constraintTop_toTopOf="@id/icon1"
+                >
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/icon3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cart"
+                app:layout_constraintEnd_toStartOf="@id/icon4"
+                app:layout_constraintStart_toEndOf="@id/icon2"
+                app:layout_constraintTop_toTopOf="@id/icon2"
+                >
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/icon4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tag_heart"
+                app:layout_constraintEnd_toStartOf="@+id/icon5"
+                app:layout_constraintStart_toEndOf="@id/icon3"
+                app:layout_constraintTop_toTopOf="@id/icon3"
+                >
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/icon5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/footer_menu_icon_with_text"
+                android:src="@drawable/ic_heart_filled"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/icon4"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+            </androidx.constraintlayout.utils.widget.ImageFilterView>
+
+            <TextView
+                android:id="@+id/icon_text"
+                android:layout_width="72dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="@dimen/footer_text_right"
+                android:layout_marginBottom="@dimen/footer_text"
+                android:text="@string/account"
+                android:textAlignment="center"
+                android:textColor="@color/replays_color"
+                android:textSize="@dimen/footer_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                >
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</RelativeLayout>
