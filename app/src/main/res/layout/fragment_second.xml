@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <EditText
+        android:id="@+id/input_num2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="number"
+        android:hint="@string/hint2"
+        >
+    </EditText>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/next_btn_margin_top"
+        android:gravity="center"
+        >
+        <Button
+            android:id="@+id/back_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/back_btn"
+            android:layout_marginRight="@dimen/btn_margin_right"
+            >
+        </Button>
+        <Button
+            android:id="@+id/next_btn"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/next_btn"
+            >
+        </Button>
+    </LinearLayout>
+
+
+
+</FrameLayout>

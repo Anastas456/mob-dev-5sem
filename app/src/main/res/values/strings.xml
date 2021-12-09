@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">laba3</string>
+    <string name="btn1">Frag 1</string>
+    <string name="btn2">Frag 2</string>
+    <string name="btn3">Frag 3</string>
+    <string name="btn4">Frag 4</string>
+    <string name="hint1">Введите первое число выражения</string>
+    <string name="hint2">Введите второе число выражения</string>
+    <string name="hint3">Введите операцию: +, -, * или /</string>
+    <string name="next_btn">Далее</string>
+    <string name="back_btn">Назад</string>
+    <string name="first_num">Первое число:</string>
+    <string name="second_num">Второе число:</string>
+    <string name="operation">Действие:</string>
+    <string name="result">Результат:</string>
+</resources>
