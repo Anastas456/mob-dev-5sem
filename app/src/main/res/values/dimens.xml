@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="menu_height">56dp</dimen>
+    <dimen name="menu_margin_bottom">16dp</dimen>
+    <dimen name="icon_margin">8dp</dimen>
+    <dimen name="big_text">20sp</dimen>
+    <dimen name="menu_text_margin_top">16dp</dimen>
+    <dimen name="menu_text_margin_left">24dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="back_icon_margin">8dp</dimen>
+    <dimen name="menu_text_font_size">20sp</dimen>
+    <dimen name="card_icon">12dp</dimen>
+    <dimen name="card_name_font_size">16sp</dimen>
+    <dimen name="main_text_card">20dp</dimen>
+    <dimen name="replays_font_size">10sp</dimen>
+    <dimen name="footer_menu_margin">24dp</dimen>
+    <dimen name="footer_menu_top_margin">15dp</dimen>
+    <dimen name="footer_text">14sp</dimen>
+    <dimen name="footer_menu_text">10dp</dimen>
+    <dimen name="footer_menu_icon_with_text">6dp</dimen>
+    <dimen name="footer_text_right">29dp</dimen>
+    <dimen name="first_item">56dp</dimen>
+    <dimen name="for_image">40dp</dimen>
+</resources>

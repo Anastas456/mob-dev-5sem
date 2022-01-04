@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">laba4</string>
+    <string name="menu_name">Личности</string>
+    <string name="name1">Наполеон Бонапарт</string>
+    <string name="time1">1769 - 1821</string>
+    <string name="main_text1">император французов (фр. Empereur des Français) в 1804—1814 и 1815 годах, полководец и государственный деятель</string>
+    <string name="gender_male">Мужчина</string>
+</resources>
